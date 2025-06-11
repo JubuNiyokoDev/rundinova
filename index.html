@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RundiNova Tech - L'Innovation au Cœur de l'Afrique</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./rundinovatech_cropped.png">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <img src="./rundinovatech_cropped_wbg.png" alt="RundiNova Tech Logo" class="img-fluid">
+            </div>
+
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Particles Background -->
+    <div id="particles-container"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="brand-text">RundiNova Tech</span>
+            </a>
+
+            <!-- Language Selector -->
+            <div class="language-selector me-3">
+                <div class="dropdown">
+                    <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" id="languageDropdown"
+                        data-bs-toggle="dropdown">
+                        <i class="fas fa-globe me-1"></i>
+                        <span id="currentLang">FR</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#" onclick="changeLanguage('fr')">
+                                <img src="https://flagcdn.com/w20/fr.png" alt="FR" class="me-2"> Français
+                            </a></li>
+                        <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">
+                                <img src="https://flagcdn.com/w20/us.png" alt="EN" class="me-2"> English
+                            </a></li>
+                        <li><a class="dropdown-item" href="#" onclick="changeLanguage('sw')">
+                                <img src="https://flagcdn.com/w20/tz.png" alt="SW" class="me-2"> Kiswahili
+                            </a></li>
+                        <li><a class="dropdown-item" href="#" onclick="changeLanguage('kr')">
+                                <img src="https://flagcdn.com/w20/bi.png" alt="KR" class="me-2"> Kirundi
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home" data-translate="nav.home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-translate="nav.about">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services" data-translate="nav.services">Services</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" data-translate="nav.projects">Projets</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#solutions"
+                            data-translate="nav.solutions">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team" data-translate="nav.team">Équipe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#partnerships"
+                            data-translate="nav.partnerships">Partenariats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-translate="nav.contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="animated-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="title-line">RundiNova Tech</span>
+                            <span class="title-subtitle" data-translate="hero.subtitle">L'Innovation au Cœur de
+                                l'Afrique</span>
+                        </h1>
+                        <p class="hero-description" data-translate="hero.description">
+                            Transformer les défis en opportunités concrètes grâce à des solutions technologiques
+                            intelligentes, inclusives et durables, pour l'Afrique et le monde.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#about" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-rocket me-2"></i><span data-translate="hero.discover">Découvrir</span>
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-phone me-2"></i><span data-translate="hero.contact">Contact</span>
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="4">0</div>
+                                <div class="stat-label" data-translate="hero.stats.projects">Projets Innovants</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="3">0</div>
+                                <div class="stat-label" data-translate="hero.stats.technologies">Technologies Clés</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="1">0</div>
+                                <div class="stat-label" data-translate="hero.stats.country">Pays d'Origine</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-visual">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-brain"></i>
+                            <span data-translate="hero.cards.ai">Intelligence Artificielle</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fab fa-ethereum"></i>
+                            <span data-translate="hero.cards.blockchain">Blockchain</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-wifi"></i>
+                            <span data-translate="hero.cards.iot">Internet des Objets</span>
+                        </div>
+                        <div class="central-logo">
+                            <img src="./rundinovatech_cropped_wbg.png" alt="RundiNova Tech Logo" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <div class="scroll-text" data-translate="hero.scroll">Scroll</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title" data-translate="about.title">À Propos de Nous</h2>
+                <p class="section-subtitle" data-translate="about.subtitle">Des Racines Locales, une Portée Mondiale</p>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-4">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h3 data-translate="about.history.title">Notre Histoire</h3>
+                        <p data-translate="about.history.description">Fondée par de jeunes innovateurs burundais,
+                            RundiNova Tech est née de la conviction que l'expertise technologique locale, associée à une
+                            compréhension profonde des réalités africaines, peut générer des solutions à impact global.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 data-translate="about.mission.title">Notre Mission</h3>
+                        <p data-translate="about.mission.description">Concevoir des solutions locales évolutives à
+                            l'échelle mondiale, en exploitant le potentiel des technologies émergentes telles que l'IA,
+                            l'IoT, la Blockchain et bien d'autres.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="values-section">
+                <h3 class="text-center mb-4" data-translate="about.values.title">Nos Valeurs Fondamentales</h3>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4 data-translate="about.values.innovation.title">Innovation Responsable</h4>
+                            <p data-translate="about.values.innovation.description">Créer des technologies qui
+                                améliorent la vie</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h4 data-translate="about.values.impact.title">Impact Social</h4>
+                            <p data-translate="about.values.impact.description">Solutions qui répondent aux besoins
+                                réels</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4 data-translate="about.values.collaboration.title">Collaboration Inclusive</h4>
+                            <p data-translate="about.values.collaboration.description">Travailler ensemble pour bâtir
+                                l'avenir</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4 data-translate="about.values.excellence.title">Excellence Technique</h4>
+                            <p data-translate="about.values.excellence.description">Poursuivre constamment l'excellence
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-dark">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title text-white" data-translate="services.title">Nos Services</h2>
+                <p class="section-subtitle text-light" data-translate="services.subtitle">Des Solutions Technologiques
+                    Sur Mesure</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 data-translate="services.development.title">Développement Logiciel</h3>
+                    <p data-translate="services.development.description">Plateformes web, applications mobiles,
+                        solutions cloud et logiciels métiers sur mesure.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> <span
+                                data-translate="services.development.feature1">Développement Web & Mobile</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="services.development.feature2">Solutions
+                                Cloud & API</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="services.development.feature3">ERP & CRM
+                                Sur Mesure</span></li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 data-translate="services.infrastructure.title">Systèmes IT & Infrastructure</h3>
+                    <p data-translate="services.infrastructure.description">Performance et sécurité de votre
+                        infrastructure informatique garanties.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> <span
+                                data-translate="services.infrastructure.feature1">Hébergement & Cybersécurité</span>
+                        </li>
+                        <li><i class="fas fa-check"></i> <span
+                                data-translate="services.infrastructure.feature2">Sauvegarde de Données</span></li>
+                        <li><i class="fas fa-check"></i> <span
+                                data-translate="services.infrastructure.feature3">Maintenance Informatique</span></li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-digital-tachograph"></i>
+                    </div>
+                    <h3 data-translate="services.transformation.title">Transformation Digitale</h3>
+                    <p data-translate="services.transformation.description">Guidage expert à travers le paysage
+                        numérique moderne.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> <span data-translate="services.transformation.feature1">Audit
+                                Technologique</span></li>
+                        <li><i class="fas fa-check"></i> <span
+                                data-translate="services.transformation.feature2">Feuilles de Route Numériques</span>
+                        </li>
+                        <li><i class="fas fa-check"></i> <span
+                                data-translate="services.transformation.feature3">E-gouvernance</span></li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 data-translate="services.training.title">Formation & Certification</h3>
+                    <p data-translate="services.training.description">Renforcement des compétences avec nos programmes
+                        sur mesure.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> <span data-translate="services.training.feature1">Formations
+                                Certifiantes</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="services.training.feature2">Bootcamps
+                                Intensifs</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="services.training.feature3">Modules Sur
+                                Mesure</span></li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 data-translate="services.international.title">Services Internationaux</h3>
+                    <p data-translate="services.international.description">Délocalisez vos projets IT en toute confiance
+                        avec nos équipes.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> <span
+                                data-translate="services.international.feature1">Sous-traitance IT</span></li>
+                        <li><i class="fas fa-check"></i> <span
+                                data-translate="services.international.feature2">Partenariats Techniques</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="services.international.feature3">Support
+                                Multilingue</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title" data-translate="projects.title">Nos Projets Innovants</h2>
+                <p class="section-subtitle" data-translate="projects.subtitle">Des Solutions Concrètes pour des Défis
+                    Réels</p>
+            </div>
+
+            <div class="projects-container">
+                <!-- ComLab Project -->
+                <div class="project-item" data-project="comlab">
+                    <div class="project-visual">
+                        <div class="project-icon comlab">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <div class="project-badge" data-translate="projects.comlab.badge">Plateforme</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="projects.comlab.title">ComLab - Plateforme d'Innovation Collaborative</h3>
+                        <p data-translate="projects.comlab.description">Une plateforme complète de mise en relation
+                            entre talents, experts, mentors, startups, entreprises et ONG. ComLab facilite
+                            l'accompagnement de projets et offre des cours certifiés pour étudiants.</p>
+                        <div class="project-features">
+                            <span class="feature-tag"><i class="fas fa-handshake"></i> <span
+                                    data-translate="projects.comlab.feature1">Matching Intelligent</span></span>
+                            <span class="feature-tag"><i class="fas fa-graduation-cap"></i> <span
+                                    data-translate="projects.comlab.feature2">Formations Certifiées</span></span>
+                            <span class="feature-tag"><i class="fas fa-globe"></i> <span
+                                    data-translate="projects.comlab.feature3">Multilingue (FR/EN/KR)</span></span>
+                            <span class="feature-tag"><i class="fas fa-rocket"></i> <span
+                                    data-translate="projects.comlab.feature4">Accompagnement Projets</span></span>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://comlab-burundi.com" target="_blank" class="btn btn-outline-primary">
+                                <i class="fas fa-external-link-alt me-2"></i><span
+                                    data-translate="projects.comlab.visit">Visiter ComLab</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TechSafe Project -->
+                <div class="project-item" data-project="techsafe">
+                    <div class="project-visual">
+                        <div class="project-icon techsafe">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="project-badge" data-translate="projects.techsafe.badge">IA & Sécurité</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="projects.techsafe.title">TechSafe - Protection Intelligente contre la VBG
+                        </h3>
+                        <p data-translate="projects.techsafe.description">Application mobile utilisant l'IA pour lutter
+                            contre la violence basée sur le genre. Signalement intelligent, information sur les droits,
+                            et système d'alerte d'urgence en Kirundi pour les communautés locales.</p>
+                        <div class="project-features">
+                            <span class="feature-tag"><i class="fas fa-brain"></i> <span
+                                    data-translate="projects.techsafe.feature1">IA Intégrée</span></span>
+                            <span class="feature-tag"><i class="fas fa-mobile-alt"></i> <span
+                                    data-translate="projects.techsafe.feature2">App Mobile</span></span>
+                            <span class="feature-tag"><i class="fas fa-exclamation-triangle"></i> <span
+                                    data-translate="projects.techsafe.feature3">Alerte d'Urgence</span></span>
+                            <span class="feature-tag"><i class="fas fa-language"></i> <span
+                                    data-translate="projects.techsafe.feature4">Interface Kirundi</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Iwanje Project -->
+                <div class="project-item" data-project="iwanje">
+                    <div class="project-visual">
+                        <div class="project-icon iwanje">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-badge" data-translate="projects.iwanje.badge">E-commerce</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="projects.iwanje.title">Iwanje - E-commerce Intelligent Multi-vendeurs</h3>
+                        <p data-translate="projects.iwanje.description">Plateforme e-commerce avancée avec blockchain
+                            intégrée pour produits, services et immobilier. Filtres intelligents, géolocalisation,
+                            recommandations automatiques et support multilingue incluant le Kirundi.</p>
+                        <div class="project-features">
+                            <span class="feature-tag"><i class="fab fa-ethereum"></i> <span
+                                    data-translate="projects.iwanje.feature1">Blockchain</span></span>
+                            <span class="feature-tag"><i class="fas fa-map-marker-alt"></i> <span
+                                    data-translate="projects.iwanje.feature2">Géolocalisation</span></span>
+                            <span class="feature-tag"><i class="fas fa-home"></i> <span
+                                    data-translate="projects.iwanje.feature3">Immobilier</span></span>
+                            <span class="feature-tag"><i class="fas fa-robot"></i> <span
+                                    data-translate="projects.iwanje.feature4">IA Recommandations</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Future Project Placeholder -->
+                <div class="project-item future-project">
+                    <div class="project-visual">
+                        <div class="project-icon future">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="project-badge" data-translate="projects.future.badge">À Venir</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="projects.future.title">Projet en Développement</h3>
+                        <p data-translate="projects.future.description">Nous travaillons constamment sur de nouvelles
+                            innovations pour répondre aux défis émergents de notre société numérique.</p>
+                        <div class="project-features">
+                            <span class="feature-tag"><i class="fas fa-cogs"></i> <span
+                                    data-translate="projects.future.feature1">En Conception</span></span>
+                            <span class="feature-tag"><i class="fas fa-lightbulb"></i> <span
+                                    data-translate="projects.future.feature2">Innovation</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="projectModalBody">
+                    <!-- Content will be dynamically loaded -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title" data-translate="solutions.title">Nos Solutions Technologiques</h2>
+                <p class="section-subtitle" data-translate="solutions.subtitle">La Technologie au Service de l'Impact
+                    Réel</p>
+            </div>
+
+            <div class="solutions-container">
+                <div class="solution-item">
+                    <div class="solution-visual">
+                        <div class="solution-icon blockchain">
+                            <i class="fab fa-ethereum"></i>
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <h3 data-translate="solutions.blockchain.title">Blockchain</h3>
+                        <p data-translate="solutions.blockchain.description">Pour une transparence accrue, une
+                            traçabilité inviolable et une sécurité des transactions sans précédent.</p>
+                        <div class="solution-sectors">
+                            <span class="sector-tag" data-translate="solutions.blockchain.sector1">Finance</span>
+                            <span class="sector-tag" data-translate="solutions.blockchain.sector2">Traçabilité</span>
+                            <span class="sector-tag" data-translate="solutions.blockchain.sector3">Sécurité</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solution-item">
+                    <div class="solution-visual">
+                        <div class="solution-icon ai">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <h3 data-translate="solutions.ai.title">Intelligence Artificielle</h3>
+                        <p data-translate="solutions.ai.description">Pour l'automatisation des tâches, l'analyse
+                            prédictive et une prise de décision intelligente.</p>
+                        <div class="solution-sectors">
+                            <span class="sector-tag" data-translate="solutions.ai.sector1">Automatisation</span>
+                            <span class="sector-tag" data-translate="solutions.ai.sector2">Prédiction</span>
+                            <span class="sector-tag" data-translate="solutions.ai.sector3">Analyse</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solution-item">
+                    <div class="solution-visual">
+                        <div class="solution-icon iot">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <h3 data-translate="solutions.iot.title">Internet des Objets</h3>
+                        <p data-translate="solutions.iot.description">Pour connecter intelligemment les objets,
+                            optimisant les ressources et améliorant l'efficacité.</p>
+                        <div class="solution-sectors">
+                            <span class="sector-tag" data-translate="solutions.iot.sector1">Connectivité</span>
+                            <span class="sector-tag" data-translate="solutions.iot.sector2">Optimisation</span>
+                            <span class="sector-tag" data-translate="solutions.iot.sector3">Smart City</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sectors-section mt-5">
+                <h3 class="text-center mb-4" data-translate="solutions.sectors.title">Secteurs d'Application</h3>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="sector-card">
+                            <i class="fas fa-coins"></i>
+                            <span data-translate="solutions.sectors.finance">Finance Numérique</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="sector-card">
+                            <i class="fas fa-seedling"></i>
+                            <span data-translate="solutions.sectors.agriculture">Agriculture Intelligente</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="sector-card">
+                            <i class="fas fa-university"></i>
+                            <span data-translate="solutions.sectors.governance">E-gouvernance</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="sector-card">
+                            <i class="fas fa-users"></i>
+                            <span data-translate="solutions.sectors.employment">Emploi des Jeunes</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="sector-card">
+                            <i class="fas fa-heartbeat"></i>
+                            <span data-translate="solutions.sectors.social">Services Sociaux</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="sector-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span data-translate="solutions.sectors.education">Éducation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title" data-translate="team.title">Notre Équipe</h2>
+                <p class="section-subtitle" data-translate="team.subtitle">Guidée par une Vision, Alimentée par la
+                    Collaboration</p>
+            </div>
+
+            <div class="team-section mb-5">
+                <h3 class="team-category-title" data-translate="team.founders.title">Fondateurs & Responsables</h3>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="team-card">
+                            <div class="team-avatar">
+                                <img src="./chris.jpeg" alt="Chris Clement Igiraneza"
+                                    style="width: 100%;height: 100%;object-fit: cover;display: block;border-radius: 50%;">
+                            </div>
+                            <h4>Chris Clement Igiraneza</h4>
+                            <p class="team-role" data-translate="team.founders.chris.role">Fondateur & Responsable
+                                Stratégique</p>
+                            <div class="team-social">
+                                <a
+                                    href="https://www.linkedin.com/in/chris-clement-igiraneza-46a75726?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                        class="fab fa-linkedin"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="team-card">
+                            <div class="team-avatar">
+                                <img src="./ferdinand.jpg" alt="Ferdinand Alimasi"
+                                    style="width: 100%;height: 100%;object-fit: cover;display: block;border-radius: 50%;">
+                            </div>
+                            <h4>Ferdinand Alimasi</h4>
+                            <p class="team-role" data-translate="team.founders.ferdinand.role">Co-fondateur, Stratégie
+                                Tech & Innovation</p>
+                            <div class="team-social">
+                                <a
+                                    href="https://www.linkedin.com/in/ferdinand-ernest-alimasi-266846211?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                        class="fab fa-linkedin"></i></a>
+                                <a href="https://x.com/ernest_alimasi?t=_q7liO4MdlUu-_vfbJfYVg&s=09"><i
+                                        class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="team-card">
+                            <div class="team-avatar">
+                                <img src="./joffre.jpg" alt="Joffre Niyondiko"
+                                    style="width: 100%;height: 100%;object-fit: cover;display: block;border-radius: 50%;"
+                                    style="width: 100%;height: 100%;object-fit: cover;display: block;border-radius: 50%;">
+                            </div>
+                            <h4>Joffre Niyondiko</h4>
+                            <p class="team-role" data-translate="team.founders.joffre.role">Co-fondateur, Développement
+                                Produit</p>
+                            <div class="team-social">
+                                <a
+                                    href="https://www.linkedin.com/in/niyondiko-joffre-062840277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                        class="fab fa-linkedin"></i></a>
+                                <a href="https://x.com/jubu_niyoko?t=wzr78EFHJbpehrZWrEtpCg&s=09"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a href="https://github.com/JubuNiyokoDev"><i class="fab fa-github"></i></a>
+                                <a href="https://www.facebook.com/JubuNiyoko"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/jubu_niyoko"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="team-card">
+                            <div class="team-avatar">
+                                <img src="./ashbel.jpg" alt="Achbel Clara Nkurunziza"
+                                    style="width: 100%;height: 100%;object-fit: cover;display: block;border-radius: 50%;">
+                            </div>
+                            <h4>Achbel Clara Nkurunziza</h4>
+                            <p class="team-role" data-translate="team.founders.achbel.role">Investisseuse & Catalyseur
+                                Stratégique</p>
+                            <div class="team-social">
+                                <a
+                                    href="https://www.linkedin.com/in/achbel-clara-nkurunziza-20aaa8267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                        class="fab fa-linkedin"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-section">
+                <h3 class="team-category-title" data-translate="team.developers.title">Équipe de Développement</h3>
+                <div class="developers-grid">
+                    <div class="developer-card">
+                        <div class="developer-icon">
+                            <img src="./joffre.jpg" alt="Niyondiko Joffre"
+                                style="width: 100%;height: 100%;object-fit: cover;display: block;border-radius: 50%;">
+                        </div>
+                        <h5>Niyondiko Joffre</h5>
+                        <p data-translate="team.developers.joffre.role">Team Leader & Développeur Mobile</p>
+                        <div class="team-social">
+                            <a
+                                href="https://www.linkedin.com/in/niyondiko-joffre-062840277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://x.com/jubu_niyoko?t=wzr78EFHJbpehrZWrEtpCg&s=09"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://github.com/JubuNiyokoDev"><i class="fab fa-github"></i></a>
+                            <a href="https://www.facebook.com/JubuNiyoko"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/jubu_niyoko"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="developer-card">
+                        <div class="developer-icon">
+                            <img src="./janvier.jpg" alt="Ndabubaha Janvier"
+                                style="width: 100%;height: 100%;object-fit: cover;display: block;border-radius: 50%;">
+                        </div>
+                        <h5>Ndabubaha Janvier</h5>
+                        <p data-translate="team.developers.janvier.role">Développeur Front End Web</p>
+                        <div class="team-social">
+                            <a
+                                href="https://www.linkedin.com/in/janeiro-hurley-955861247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://x.com/janeirohurley?t=JnJFpl6YZDbb9tFAM7j1OQ&s=09"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://github.com/JaneiroHurley"><i class="fab fa-github"></i></a>
+                            <a href="https://www.facebook.com/janeirohurley"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/janeirohurley"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="developer-card">
+                        <div class="developer-icon">
+                            <img src="./pacifique.jpg" alt="Mugisha Pacifique"
+                                style="width: 100%;height: 100%;object-fit: cover;display: block;border-radius: 50%;">
+                        </div>
+                        <h5>Mugisha Pacifique</h5>
+                        <p data-translate="team.developers.pacifique.role">Développeur Mobile</p>
+                        <div class="team-social">
+                            <a
+                                href="https://www.linkedin.com/in/pacifique-mugisha-b899b7287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                    class="fab fa-linkedin"></i></a>
+
+                            <a href="https://github.com/Pacifique257"><i class="fab fa-github"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="developer-card">
+                        <div class="developer-icon">
+                            <img src="./idris.jpeg" alt="Ndikumana Idris"
+                                style="width: 100%;height: 100%;object-fit: cover;display: block;border-radius: 50%;">
+                        </div>
+                        <h5>Ndikumana Idris</h5>
+                        <p data-translate="team.developers.idris.role">Lead Backend & Développeur Backend</p>
+                        <div class="team-social">
+                            <a
+                                href="https://www.linkedin.com/in/idris-ndikumana-534ab427b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                    class="fab fa-linkedin"></i></a>
+
+                            <a href="https://github.com/Ndikuma"><i class="fab fa-github"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="developer-card">
+                        <div class="developer-icon">
+                            <img src="./joyeux.jpeg" alt="Irankunda Joyeux"
+                                style="width: 100%;height: 100%;object-fit: cover;display: block;border-radius: 50%;">
+                        </div>
+                        <h5>Irankunda Joyeux</h5>
+                        <p data-translate="team.developers.joyeux.role">Développeur Mobile</p>
+                        <div class="team-social">
+
+                            <a href="https://github.com/Joyeux9"><i class="fab fa-github"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="developer-card">
+                        <div class="developer-icon">
+                            <img src="./franck.JPG" alt="Maniranyibutse Franck"
+                                style="width: 100%;height: 100%;object-fit: cover;display: block;border-radius: 50%;">
+                        </div>
+                        <h5>Maniranyibutse Franck</h5>
+                        <p data-translate="team.developers.franck.role">Développeur Backend</p>
+                        <div class="team-social">
+                            <a
+                                href="https://www.linkedin.com/in/franck-maniranyibutse-50b9b82b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                    class="fab fa-linkedin"></i></a>
+
+                            <a href="https://github.com/Joyeux9"><i class="fab fa-github"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="developer-card">
+                        <div class="developer-icon">
+                            <img src="./elvis.jpeg" alt="Irambona Elvis"
+                                style="width: 100%;height: 100%;object-fit: cover;display: block;border-radius: 50%;">
+                        </div>
+                        <h5>Irambona Elvis</h5>
+                        <p data-translate="team.developers.elvis.role">Développeur Backend</p>
+                        <div class="team-social">
+
+                            <a href="https://github.com/ElvisIRAMBONA"><i class="fab fa-github"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="developer-card">
+                        <div class="developer-icon">
+                            <img src="./fanuel.jpg" alt="Mandela Kasumba Fanuel"
+                                style="width: 100%;height: 100%;object-fit: cover;display: block;border-radius: 50%;">
+                        </div>
+                        <h5>Mandela Kasumba Fanuel</h5>
+                        <p data-translate="team.developers.mandela.role">Développeur Backend</p>
+                        <div class="team-social">
+
+                            <a href="https://github.com/MandelaFanuel"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnerships Section -->
+    <section id="partnerships" class="section-padding bg-dark">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title text-white" data-translate="partnerships.title">Partenariats</h2>
+                <p class="section-subtitle text-light" data-translate="partnerships.subtitle">Construisons le Futur
+                    Ensemble</p>
+            </div>
+
+            <div class="partnership-content">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6">
+                        <h3 class="text-white" data-translate="partnerships.why.title">Pourquoi choisir RundiNova Tech ?
+                        </h3>
+                        <div class="partnership-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5 data-translate="partnerships.features.team.title">Équipe Qualifiée et
+                                        Multilingue</h5>
+                                    <p data-translate="partnerships.features.team.description">Nos talents maîtrisent le
+                                        Français, l'Anglais et le Kirundi</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5 data-translate="partnerships.features.context.title">Maîtrise du Contexte
+                                        Africain</h5>
+                                    <p data-translate="partnerships.features.context.description">Compréhension profonde
+                                        des défis et opportunités du continent</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5 data-translate="partnerships.features.network.title">Réseau International</h5>
+                                    <p data-translate="partnerships.features.network.description">Des connexions qui
+                                        ouvrent des portes et amplifient l'impact</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5 data-translate="partnerships.features.experience.title">Expérience
+                                        Multisectorielle</h5>
+                                    <p data-translate="partnerships.features.experience.description">Capacité éprouvée
+                                        dans divers domaines à fort impact</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="partnership-visual">
+                            <div class="partnership-icons">
+                                <div class="partner-icon"><i class="fas fa-university"></i></div>
+                                <div class="partner-icon"><i class="fas fa-building"></i></div>
+                                <div class="partner-icon"><i class="fas fa-handshake"></i></div>
+                                <div class="partner-icon"><i class="fas fa-globe-africa"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section text-center">
+                    <h3 data-translate="partnerships.cta.title">Rejoignez notre Écosystème d'Innovation</h3>
+                    <p data-translate="partnerships.cta.description">Que vous soyez investisseur, ONG, université, ou
+                        acteur public/privé, collaborons pour développer des technologies transformatrices.</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        <i class="fas fa-handshake me-2"></i><span data-translate="partnerships.cta.button">Devenir
+                            Partenaire</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title" data-translate="contact.title">Contact</h2>
+                <p class="section-subtitle" data-translate="contact.subtitle">Entamons la Conversation</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="row">
+                    <div class="col-lg-8 mb-4">
+                        <div class="contact-form-wrapper">
+                            <form class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control"
+                                                data-translate-placeholder="contact.form.name" placeholder="Votre nom *"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control"
+                                                data-translate-placeholder="contact.form.email"
+                                                placeholder="Votre email *" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control"
+                                        data-translate-placeholder="contact.form.subject" placeholder="Sujet">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <textarea class="form-control" rows="6"
+                                        data-translate-placeholder="contact.form.message" placeholder="Votre message *"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i><span
+                                        data-translate="contact.form.send">Envoyer le Message</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5 data-translate="contact.offices.title">Nos Bureaux</h5>
+                                    <p><strong data-translate="contact.offices.main">Siège Social:</strong><br>Avenue
+                                        Lac Rweru No. 7, Kabondo, Bujumbura, Burundi</p>
+                                    <p><strong data-translate="contact.offices.secondary">Bureau
+                                            Secondaire:</strong><br>Université Polytechnique de Gitega (UPG), Gitega,
+                                        Burundi</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Email</h5>
+                                    <p><a href="mailto:contact@rundinova.tech">contact@rundinova.tech</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5 data-translate="contact.phones.title">Téléphones</h5>
+                                    <p><a href="tel:+25768497372">+257 68 49 73 72</a> (Gitega)</p>
+                                    <p><a href="tel:+25762850225">+257 62 85 02 25</a> (Bujumbura)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <h4><i class="fas fa-rocket me-2"></i>RundiNova Tech</h4>
+                        <p data-translate="footer.description">L'Innovation au Cœur de l'Afrique. Transformer les défis
+                            en opportunités concrètes grâce à la technologie.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 data-translate="footer.navigation.title">Navigation</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-translate="nav.home">Accueil</a></li>
+                        <li><a href="#about" data-translate="nav.about">À Propos</a></li>
+                        <li><a href="#services" data-translate="nav.services">Services</a></li>
+                        <li><a href="#projects" data-translate="nav.projects">Projets</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 data-translate="footer.company.title">Entreprise</h5>
+                    <ul class="footer-links">
+                        <li><a href="#team" data-translate="nav.team">Équipe</a></li>
+                        <li><a href="#partnerships" data-translate="nav.partnerships">Partenariats</a></li>
+                        <li><a href="#contact" data-translate="nav.contact">Contact</a></li>
+                        <li><a href="#" data-translate="footer.company.careers">Carrières</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 data-translate="footer.follow.title">Suivez-nous</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <p data-translate="footer.newsletter.text">Inscrivez-vous à notre newsletter</p>
+                        <div class="newsletter-form">
+                            <input type="email" data-translate-placeholder="footer.newsletter.placeholder"
+                                placeholder="Votre email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="copyright" data-translate="footer.copyright">&copy; 2024 RundiNova Tech. Tous droits
+                        réservés.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-legal">
+                        <a href="#" data-translate="footer.legal.privacy">Politique de Confidentialité</a>
+                        <a href="#" data-translate="footer.legal.terms">Conditions d'Utilisation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
